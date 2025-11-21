@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Functions - JavaScript Assignment 3</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Excel Functions</h1>
+        <form id="main-form" name="mainform">
+            <div class="form-group">
+                <label for="numbers">Enter your numbers separated by spaces:</label>
+                <input type="text" id="numbers" name="numbers" placeholder="Example: 23 67 98 90 56">
+            </div>
+            
+            <div class="form-group">
+                <div class="radio-options">
+                    <label>
+                        <input type="radio" name="excel" id="sum" checked>
+                        AutoSum
+                    </label>
+                    <label>
+                        <input type="radio" name="excel" id="avg">
+                        Average
+                    </label>
+                    <label>
+                        <input type="radio" name="excel" id="max">
+                        Max
+                    </label>
+                    <label>
+                        <input type="radio" name="excel" id="min">
+                        Min
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-buttons">
+                <button type="button" id="calculateButton">Calculate</button>
+            </div>
+        </form>
+        <div id="output">
+            <h3>Result:</h3>
+            <div id="result">
+                <!-- Result will be displayed here -->
+            </div>
+        </div>
+        
+        
+    </main>
+    <footer>
+        <p>
+            Georgian @ ILAC - HTML, CSS, and JavaScript Assignment#3 - Group 7: Rittanpreet Kaur and Jaskirat Singh
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

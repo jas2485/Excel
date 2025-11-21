@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - JavaScript Assignment 3</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>User Registration Form</h1>
+        <form id="main-form" name="mainform">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="province">Province:</label>
+                <input type="text" id="province" name="province" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Membership Type:</label>
+                <div class="radio-options">
+                    <label>
+                        <input type="radio" name="membership" id="premium" value="Premium" checked>
+                        Premium Membership
+                    </label>
+                    <label>
+                        <input type="radio" name="membership" id="standard" value="Standard">
+                        Standard Membership
+                    </label>
+                    <label>
+                        <input type="radio" name="membership" id="basic" value="Basic">
+                        Basic Membership
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-buttons">
+                <button type="button" id="sendButton">Send</button>
+                <button type="reset" id="cancelButton">Cancel</button>
+            </div>
+        </form>
+        <div id="output">
+            <!-- User info will be displayed here -->
+        </div>
+    </main>
+    <footer>
+        <p>
+            Georgian @ ILAC - HTML, CSS, and JavaScript  By: Jaskirat Singh, Rittanpreet Kaur and Ankush
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
